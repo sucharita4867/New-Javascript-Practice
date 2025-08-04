@@ -9,3 +9,4 @@ console.log(result);
 //   .concat(".")
 //   .concat(student.department)
 //   .concat("@ph.ac.bd");
+// console.log(result);
