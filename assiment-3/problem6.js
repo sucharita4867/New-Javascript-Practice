@@ -2,6 +2,9 @@
 var experience = 30;
 var startingSalary = 45000;
 //write your code here
-if (startingSalary % 5) {
-  console.log(startingSalary);
+var currentSalary = startingSalary;
+for (let i = 1; i <= experience; i++) {
+  currentSalary = currentSalary + currentSalary * 0.05;
 }
+newSalary = currentSalary.toFixed(2);
+console.log(newSalary);

@@ -1,5 +1,6 @@
 /** Problem 04 - (Delete / Store) */
-var fileName = "#pdfData.jpg";
+var fileName = "pdfData.jpg";
+//write your code here
 if (fileName.includes(".pdf")) {
   console.log("Store");
 } else if (fileName.includes("#")) {
