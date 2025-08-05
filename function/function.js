@@ -17,8 +17,14 @@
 // }
 // multipli(22, 634);
 ////////////////////////////////////////////////
-function share(num1, num2) {
-  total = num1 / num2;
-  console.log("share no:", total);
-}
-share(2, 2);
+// function share(num1, num2) {
+//   total = num1 / num2;
+//   console.log("share no:", total);
+// }
+// share(2, 2);
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// function modulas(num1, num2) {
+//   sum = num1 % num2;
+//   console.log("modulas no:", sum);
+// }
+// modulas(23, 30);
