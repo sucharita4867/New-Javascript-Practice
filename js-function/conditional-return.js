@@ -16,5 +16,14 @@ function oddNo(number) {
   }
   return "false";
 }
-console.log(oddNo(5));
-console.log(oddNo(8));
+// console.log(oddNo(5));
+// console.log(oddNo(8));
+
+function oddNoDiclaretion(number) {
+  if (number % 2 === 1) {
+    return true;
+  }
+  return false;
+}
+console.log(oddNoDiclaretion(41));
+console.log(oddNoDiclaretion(4));
