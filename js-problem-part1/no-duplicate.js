@@ -16,7 +16,15 @@ function noDuplicate(numbers) {
 // console.log(result);
 // ----------------------------------------------
 function duplcateNo(friends) {
-  console.log(friends);
+  //   console.log(friends);
+  let friended = [];
+  for (const friend of friends) {
+    //     console.log(friend);
+    if (friended.includes(friend) === false) {
+      friended.push(friend);
+    }
+  }
+  return friended;
 }
 const result = duplcateNo(friends);
 console.log(result);
