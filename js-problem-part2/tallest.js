@@ -23,5 +23,8 @@ function minHeight(numbers) {
   }
   return minNo;
 }
-const result = minHeight(heights);
-console.log(result);
+// const result = minHeight(heights);
+// console.log(result);
+// ------------------------------------------
+const min = Math.min(23, 15, 4, 7, 12, 78, 98, 34, 2);
+console.log(min);
