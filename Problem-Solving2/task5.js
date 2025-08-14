@@ -1,24 +1,33 @@
 function resultReport(marks) {
-  // 1fine avarage of marks
+  if (Array.isArray(marks) === false) {
+    return "Invalid";
+  }
   let marksSum = 0;
   for (const num of marks) {
     marksSum = marksSum + num;
   }
   let newSum = marksSum / marks.length;
   let sum = Math.round(newSum);
-  let marksIndex = 0;
-  for (const num of marks) {
-    if (num >= 40) {
-      console.log(num);
+  let total = 0;
+  let passno = 0;
+  let failno = 0;
+  for (let mark of marks) {
+    total += mark;
+    if (mark >= 40) {
+      passno++;
+    } else {
+      failno++;
     }
   }
-  // let final = {
-  //   finalScore: sum,
-  // };
-  // return final;
+  let final = {
+    finalScore: sum,
+    pass: passno,
+    fail: failno,
+  };
+  return final;
 }
-const result = resultReport([98, 87, 67, 91, 92, 33, 87]);
-// console.log(result);
+const result = resultReport([]);
+console.log(result);
 // --------------------------------------
 //   let sleepSecond = sum;
 //   let hour = Math.floor(sleepSecond / 3600);
