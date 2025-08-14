@@ -9,24 +9,24 @@ function resultReport(marks) {
   let newSum = marksSum / marks.length;
   let sum = Math.round(newSum);
   let total = 0;
-  let passno = 0;
-  let failno = 0;
+  let passNo = 0;
+  let failNo = 0;
   for (let mark of marks) {
     total += mark;
     if (mark >= 40) {
-      passno++;
+      passNo++;
     } else {
-      failno++;
+      failNo++;
     }
   }
   let final = {
     finalScore: sum,
-    pass: passno,
-    fail: failno,
+    pass: passNo,
+    fail: failNo,
   };
   return final;
 }
-const result = resultReport([]);
+const result = resultReport(100);
 console.log(result);
 // --------------------------------------
 //   let sleepSecond = sum;
