@@ -1,10 +1,9 @@
 function isSame(arr1, arr2) {
-  if (typeof arr1 == "array" || typeof arr2 == "array") {
+  if (Array.isArray(arr1) === false || Array.isArray(arr2) === false) {
     return "Invalid";
   }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
-      newArray = false;
       return false;
     }
   }
@@ -14,11 +13,5 @@ function isSame(arr1, arr2) {
     return false;
   }
 }
-const result = isSame([2, 5, 6], 256);
+const result = isSame([1, 2, 3], [1, 2, 3]);
 console.log(result);
-
-// if (arr1 !== arr2) {
-//     return true;
-//   } else {
-//     return false;
-//   }
