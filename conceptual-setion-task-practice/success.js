@@ -20,5 +20,3 @@ function willSuccess(marks) {
     return false;
   }
 }
-const result = willSuccess(90);
-console.log(result);
