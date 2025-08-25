@@ -22,3 +22,7 @@ for (let latter of sentence) {
 //   rev = latters + rev;
 // }
 // console.log(rev);
+
+for (let i = 0; i < 50; i++) {
+  console.log(i);
+}
