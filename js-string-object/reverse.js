@@ -23,6 +23,6 @@ for (let latter of sentence) {
 // }
 // console.log(rev);
 
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i <= 50; i++) {
   console.log(i);
 }
